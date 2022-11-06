@@ -6,7 +6,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'vest-interest',
+  base: '/vest-interest/',
   plugins: [vue(), vueJsx()],
   resolve: {
     alias: {

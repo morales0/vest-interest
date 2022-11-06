@@ -1,5 +1,11 @@
-name: Build Vue
-on: [push]
+name: Build Vue on main
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 jobs:
   build_vue:
     runs-on: ubuntu-latest

@@ -19,10 +19,7 @@ import Navbar from './components/Navbar.vue'
 </template>
 
 <style scoped>
-header {
-  border: 1px solid white;
-  padding: .5rem;
-}
+header {}
 
 main {
   flex: 1 0 auto;

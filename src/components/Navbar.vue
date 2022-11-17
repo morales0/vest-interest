@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
 import { Icon } from '@iconify/vue';
+import SelectNavLink from './SelectNavLink.vue';
 
 import { ref } from 'vue'
 
@@ -18,18 +19,7 @@ const toggle = () => {
       <img src="../assets/vest-interest-logo.png" alt="Vest Interest Logo" height="90">
     </div>
     <ul class="links main">
-      <!-- Turn into reusable component -->
-      <li class="select" @click="toggle">
-        <div>School Program</div>
-        <Icon icon="ep:arrow-down-bold" width="20" class="select_toggle_icon" />
-        <div v-if="collapsed" class="select_menu">
-          <ul class="select_links">
-            <li>
-              <RouterLink to="#">Link</RouterLink>
-            </li>
-          </ul>
-        </div>
-      </li>
+      <SelectNavLink name="School Program" :links="['Link1', 'Link 2']" />
       <li>
         <RouterLink to="/service-dogs">Service Dogs</RouterLink>
       </li>
@@ -99,10 +89,5 @@ const toggle = () => {
 
 .links.aside {
   margin-left: auto;
-}
-
-.select_menu {
-  position: absolute;
-  top: 50px;
 }
 </style>

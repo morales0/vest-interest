@@ -16,7 +16,7 @@ const toggle = () => {
 <template>
   <nav class="Navbar">
     <div class="logo">
-      <img src="../assets/vest-interest-logo.png" alt="Vest Interest Logo" height="90">
+      <img class="h-24" src="../assets/vest-interest-logo.png" alt="Vest Interest Logo">
     </div>
     <ul class="links main">
       <SelectNavLink name="School Program" :links="['Link1', 'Link 2']" />

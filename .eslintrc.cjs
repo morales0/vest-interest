@@ -8,6 +8,10 @@ module.exports = {
     'eslint:recommended',
     '@vue/eslint-config-typescript'
   ],
+  ignorePatterns: [
+    'postcss.config.js',
+    'tailwind.config.cjs'
+  ],
   overrides: [
     {
       files: [
@@ -24,5 +28,5 @@ module.exports = {
   },
   rules: {
     'vue/multi-word-component-names': 'off'
-  }
+  },
 }

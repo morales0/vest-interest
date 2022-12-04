@@ -11,10 +11,6 @@ import Navbar from './components/Navbar.vue'
   <main>
     <RouterView />
   </main>
-
-  <footer>
-    Footer
-  </footer>
 </template>
 
 <style scoped>

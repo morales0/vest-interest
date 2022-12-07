@@ -2,15 +2,6 @@
 import { RouterLink } from 'vue-router'
 import { Icon } from '@iconify/vue';
 import SelectNavLink from './SelectNavLink.vue';
-
-import { ref } from 'vue'
-
-const collapsed = ref(true)
-
-const toggle = () => {
-  collapsed.value = !(collapsed.value)
-}
-
 </script>
 
 <template>
@@ -18,6 +9,7 @@ const toggle = () => {
     <div class="logo">
       <img class="h-24" src="../assets/vest-interest-logo.png" alt="Vest Interest Logo">
     </div>
+
     <ul class="links main">
       <SelectNavLink name="School Program" :links="['Link1', 'Link 2']" />
       <li>
